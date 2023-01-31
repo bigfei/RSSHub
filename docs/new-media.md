@@ -273,6 +273,12 @@ pageClass: routes
 
 </Route>
 
+## CoinDesk Consensus Magazine
+
+### 新闻周刊
+
+<Route author="jameshih" example="/coindesk/consensus-magazine" path="/coindesk/consensus-magazine"/>
+
 ## Common App
 
 ### Blog
@@ -3423,15 +3429,15 @@ column 为 third 时可选的 category:
 
 ### 分类
 
-<Route author="nczitzk" example="/ruancan/sort/news" path="/ruancan/sort/:sort" :paramsDesc="['分类 id，可在对应分类页 URL 中找到']"/>
-
-### 标签
-
-<Route author="nczitzk" example="/ruancan/tag/oxygenos" path="/ruancan/tag/:tag" :paramsDesc="['标签 id，可在对应标签页 URL 中找到']"/>
+<Route author="nczitzk" example="/ruancan/category/news" path="/ruancan/category/:category?" :paramsDesc="['分类 id，可在对应分类页 URL 中找到，默认为业界']"/>
 
 ### 搜索
 
-<Route author="nczitzk" example="/ruancan/search/ColorOS" path="/ruancan/search/:keyword?" :paramsDesc="['关键字，默认为空']"/>
+<Route author="nczitzk" example="/ruancan/search/Windows" path="/ruancan/search/:keyword?" :paramsDesc="['关键字，默认为空']"/>
+
+### 用户文章
+
+<Route author="nczitzk" example="/ruancan/user/72" path="/ruancan/user/:id?" :paramsDesc="['用户 id，可在对应用户页 URL 中找到']"/>
 
 ## 上下游 News\&Market
 
@@ -4189,7 +4195,9 @@ wechat-feeds 来源[已停止更新](https://github.com/hellodword/wechat-feeds/
 
 ## 小刀娱乐网
 
-<Route author="nczitzk" example="/x6d/34" path="/x6d/:id?" :paramsDesc="['分类 id，可在对应分类页面的 URL 中找到，默认为首页最近更新']">
+### 分类
+
+<Route author="nczitzk" example="/x6d/34" path="/x6d/:id?" :paramsDesc="['分类 id，可在对应分类页面的 URL 中找到，默认为首页最近更新']" radar="1">
 
 | 技巧分享 | QQ 技巧 | 微信技巧 | 其他教程 | 其他分享 |
 | ---- | ----- | ---- | ---- | ---- |

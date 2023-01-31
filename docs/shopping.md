@@ -95,6 +95,16 @@ pageClass: routes
 
 <Route author="DIYgod" example="/hotukdeals/hottest" path="/hotukdeals/hottest"></Route>
 
+## IKEA 宜家
+
+### 英国 - 商品上新
+
+<Route author="HenryQW" example="/ikea/gb/new" path="/ikea/gb/new" radar="1"/>
+
+### 英国 - 促销
+
+<Route author="HenryQW" example="/ikea/gb/offer" path="/ikea/gb/offer" radar="1"/>
+
 ## lativ
 
 ### 订阅价格

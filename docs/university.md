@@ -1346,6 +1346,18 @@ category 列表：
 
 </Route>
 
+## 黑龙江中医药大学
+
+### 研究生院
+
+<Route author="nczitzk" example="/hljucm/yjsy" path="/hljucm/yjsy/:category?" :paramsDesc="['分类, 见下表，默认为新闻动态']" radar="1">
+
+| 新闻动态 | 通知公告 |
+| ---- | ---- |
+| xwdt | tzgg |
+
+</Route>
+
 ## 湖北大学
 
 ### 新闻通知
@@ -2787,6 +2799,18 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 | 公告类型 | 通知公告 | 教务信息 | 科研动态 |
 | ---- | ---- | ---- | ---- |
 | 参数   | 1    | 2    | 3    |
+
+</Route>
+
+## 西安财经大学
+
+### 教务处
+
+<Route author="shaokeyibb" example="/xaufe/jiaowu/tzgg" path="/xaufe/jiaowu/:category?" :paramsDesc="['分类，默认为通知公告']" radar="1" rssbud="1">
+
+| 通知公告 |
+| :--: |
+| tzgg |
 
 </Route>
 
