@@ -1,5 +1,5 @@
 <figure>
-    <img src="{{ pic_url || imgs.img800 }}" alt="{{ alt }}" loading="lazy" style="display:block; margin-left:auto; margin-right:auto;" width:100%;>
+    <img src="{{ pic_url || img_square || imgs.img800 }}" alt="{{ alt }}" loading="lazy" style="display:block; margin-left:auto; margin-right:auto;" width:100%;>
     {{if videos_url }}
         <video controls
         playsinline="true"
