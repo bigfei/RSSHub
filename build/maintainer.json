@@ -1100,6 +1100,13 @@
     "/cncf/:cate?": [
         "Fatpandac"
     ],
+    "/cneb/yjxw/:category?": [
+        "nczitzk"
+    ],
+    "/cneb/yjxx/:level?/:province?/:city?": [
+        "muzea",
+        "nczitzk"
+    ],
     "/cngal/entry/:id": [
         "chengyuhui"
     ],
@@ -1977,6 +1984,9 @@
     ],
     "/google/sites/recentChanges/:id": [
         "nczitzk"
+    ],
+    "/gov/cac/:path+": [
+        "drgnchan"
     ],
     "/gov/ccdi/:path+": [
         "bigfei"
@@ -3329,6 +3339,9 @@
     ],
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
         "CaoMeiYouRen"
+    ],
+    "/mihoyo/sr/:location?/:category?": [
+        "shinanory"
     ],
     "/mihoyo/ys/:location?/:category?": [
         "nczitzk"
@@ -6504,8 +6517,6 @@
     "/sans/summit_archive": [],
     "/latexstudio/home": [],
     "/jskou/:type?": [],
-    "/cneb/yjxx": [],
-    "/cneb/guoneinews": [],
     "/mail/imap/:email": [],
     "/network360/jobs": [],
     "/zhilian/:city/:keyword": [],
