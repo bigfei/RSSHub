@@ -965,6 +965,9 @@
     "/cau/yjs": [
         "shengmaosu"
     ],
+    "/cbaigui/:path+": [
+        "nczitzk"
+    ],
     "/cbirc/:category?": [
         "JkCheung"
     ],
@@ -1440,6 +1443,9 @@
     ],
     "/dhu/xxgk/news": [
         "KiraKiseki"
+    ],
+    "/dhu/yjs/news/:type?": [
+        "fox2049"
     ],
     "/dhu/yjs/zs/:type?": [
         "fox2049"
