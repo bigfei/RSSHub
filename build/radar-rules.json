@@ -1489,6 +1489,28 @@
       }
     ]
   },
+  "agemys.org": {
+    "_name": "AGE动漫",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/update",
+          "/"
+        ],
+        "target": "/agefans/update"
+      },
+      {
+        "title": "番剧详情",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/detail/:id"
+        ],
+        "target": "/agefans/detail/:id"
+      }
+    ]
+  },
   "aotter.net": {
     "_name": "電獺少女",
     "agirls": [
@@ -9405,6 +9427,16 @@
         "source": [
           "/"
         ]
+      }
+    ],
+    "wsbs.wgj": [
+      {
+        "title": "上海市文旅局审批公告",
+        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-ren-min-zheng-fu-shang-hai-shi-wen-lv-ju-shen-pi-gong-gao",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/shanghai/wgj"
       }
     ]
   },
@@ -23459,6 +23491,19 @@
           "/"
         ],
         "target": "/v1tx"
+      }
+    ]
+  },
+  "v2rayshare.com": {
+    "_name": "V2rayShare",
+    ".": [
+      {
+        "title": "免费节点",
+        "docs": "https://docs.rsshub.app/other.html#v2rayshare",
+        "source": [
+          "/"
+        ],
+        "target": "/v2rayshare"
       }
     ]
   },
