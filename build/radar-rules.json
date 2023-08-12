@@ -1734,6 +1734,27 @@
       }
     ]
   },
+  "alistapart.com": {
+    "_name": "A List Apart",
+    ".": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/en/programming.html#a-list-apart",
+        "source": [
+          "/articles/"
+        ],
+        "target": "/alistapart"
+      },
+      {
+        "title": "Topics",
+        "docs": "https://docs.rsshub.app/en/programming.html#a-list-apart",
+        "source": [
+          "/blog/topic/:topic"
+        ],
+        "target": "/alistapart/:topic"
+      }
+    ]
+  },
   "aliyun.com": {
     "_name": "阿里云",
     "developer": [
@@ -1912,6 +1933,19 @@
           "/html/:category?/:topic?"
         ],
         "target": "/ally/rail/:category?/:topic?"
+      }
+    ]
+  },
+  "altervista.org": {
+    "_name": "Altervista",
+    "hyp3rlinx": [
+      {
+        "title": "hyp3rlinx blog",
+        "docs": "https://docs.rsshub.app/",
+        "source": [
+          "/"
+        ],
+        "target": "/rsshub/transform/html/http%3A%2F%2Fhyp3rlinx.altervista.org%2F/item=table[border=%221%22]%20tr%20td%20a"
       }
     ]
   },
@@ -6050,6 +6084,27 @@
       }
     ]
   },
+  "dnaindia.com": {
+    "_name": "DNA India",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/en/traditional-media.html#dna-india",
+        "source": [
+          "/:category"
+        ],
+        "target": "/dnaindia/:category"
+      },
+      {
+        "title": "Topic",
+        "docs": "https://docs.rsshub.app/en/traditional-media.html#dna-india",
+        "source": [
+          "/topic/:topic"
+        ],
+        "target": "/dnaindia/topic/:topic"
+      }
+    ]
+  },
   "docker.com": {
     "_name": "Docker Hub",
     "hub": [
@@ -6904,6 +6959,38 @@
           "/"
         ],
         "target": "/ecust/yjs"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "本科教务处信息网",
+        "docs": "https://docs.rsshub.app/university.html#hua-dong-li-gong-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/ecust/jwc/notice/:category?"
+      }
+    ]
+  },
+  "eet-china.com": {
+    "_name": "电子工程专辑",
+    ".": [
+      {
+        "title": "芯语",
+        "docs": "https://docs.rsshub.app/new-media.html#dian-zi-gong-cheng-zhuan-ji-xin-yu",
+        "source": [
+          "/mp",
+          "/"
+        ]
+      },
+      {
+        "title": "芯语 - 标签",
+        "docs": "https://docs.rsshub.app/new-media.html#dian-zi-gong-cheng-zhuan-ji-xin-yu-biao-qian",
+        "source": [
+          "/mp/tags/:id",
+          "/"
+        ],
+        "target": "/eet-china/mp/tags/:id"
       }
     ]
   },
@@ -17155,6 +17242,14 @@
         "target": "/odaily/newsflash"
       },
       {
+        "title": "搜索快讯",
+        "docs": "https://docs.rsshub.app/new-media.html#odaily-xing-qiu-ri-bao-sou-suo-kuai-xun",
+        "source": [
+          "/search/:keyword"
+        ],
+        "target": "/odaily/search/news/:keyword"
+      },
+      {
         "title": "文章",
         "docs": "https://docs.rsshub.app/new-media.html#odaily-xing-qiu-ri-bao-wen-zhang",
         "source": [
@@ -17193,6 +17288,14 @@
           "/"
         ],
         "target": "/odaily/newsflash"
+      },
+      {
+        "title": "搜索快讯",
+        "docs": "https://docs.rsshub.app/new-media.html#odaily-xing-qiu-ri-bao-sou-suo-kuai-xun",
+        "source": [
+          "/search/:keyword"
+        ],
+        "target": "/odaily/search/news/:keyword"
       },
       {
         "title": "文章",
@@ -18642,6 +18745,20 @@
       }
     ]
   },
+  "qqorw.cn": {
+    "_name": "早报网",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#zao-bao-wang-fen-lei",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/qqorw/:category?"
+      }
+    ]
+  },
   "getquicker.net": {
     "_name": "Quicker",
     ".": [
@@ -18979,6 +19096,19 @@
           "/"
         ],
         "target": "/ruc/hr/:category?"
+      }
+    ]
+  },
+  "runtrail.cn": {
+    "_name": "跑野大爆炸",
+    ".": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/new-media.html#pao-ye",
+        "source": [
+          "/"
+        ],
+        "target": "/runtrail"
       }
     ]
   },
@@ -19560,6 +19690,20 @@
       }
     ]
   },
+  "sec.today": {
+    "_name": "每日安全",
+    ".": [
+      {
+        "title": "动态",
+        "docs": "https://docs.rsshub.app/",
+        "source": [
+          "/pulses",
+          "/"
+        ],
+        "target": "/rsshub/transform/html/https%3A%2F%2Fsec.today%2Fpulses%2F/item=div[class=\"card-body\"]"
+      }
+    ]
+  },
   "sec-in.com": {
     "_name": "SecIN信息安全技术社区",
     ".": [
@@ -19738,6 +19882,52 @@
           "/"
         ],
         "target": "/setn/女孩"
+      }
+    ]
+  },
+  "seu.edu.cn": {
+    "_name": "东南大学",
+    "cse": [
+      {
+        "title": "计算机技术与工程学院",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue",
+        "source": [
+          "/:type/list.htm",
+          "/"
+        ],
+        "target": "/seu/cse/:type?"
+      }
+    ],
+    "radio": [
+      {
+        "title": "信息科学与工程学院学术活动",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue",
+        "source": [
+          "/_s29/15986/list.psp",
+          "/"
+        ],
+        "target": "/seu/radio/academic"
+      }
+    ],
+    "seugs": [
+      {
+        "title": "研究生院全部公告",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue-yan-jiu-sheng-yuan-quan-bu-gong-gao",
+        "source": [
+          "/26671/list.htm",
+          "/"
+        ],
+        "target": "/seu/yjs"
+      }
+    ],
+    "yzb": [
+      {
+        "title": "研究生招生网通知公告",
+        "docs": "https://docs.rsshub.app/university.html#dong-nan-da-xue",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/seu/yzb/:type"
       }
     ]
   },
@@ -20741,6 +20931,27 @@
       }
     ]
   },
+  "smashingmagazine.com": {
+    "_name": "Smashing Magazine",
+    ".": [
+      {
+        "title": "Articles",
+        "docs": "https://docs.rsshub.app/en/programming.html#a-list-apart",
+        "source": [
+          "/articles/"
+        ],
+        "target": "/smashingmagazine"
+      },
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/en/programming.html#a-list-apart",
+        "source": [
+          "/category/:category"
+        ],
+        "target": "/smashingmagazine/:category"
+      }
+    ]
+  },
   "smzdm.com": {
     "_name": "什么值得买",
     "post": [
@@ -21026,20 +21237,20 @@
     "_name": "Spotify",
     "open": [
       {
-        "title": "播放列表",
-        "docs": "https://docs.rsshub.app/multimedia.html#spotify",
-        "source": [
-          "/playlist/:id"
-        ],
-        "target": "/spotify/playlist/:id"
-      },
-      {
         "title": "歌手专辑",
         "docs": "https://docs.rsshub.app/multimedia.html#spotify",
         "source": [
           "/artist/:id"
         ],
         "target": "/spotify/artist/:id"
+      },
+      {
+        "title": "播放列表",
+        "docs": "https://docs.rsshub.app/multimedia.html#spotify",
+        "source": [
+          "/playlist/:id"
+        ],
+        "target": "/spotify/playlist/:id"
       },
       {
         "title": "用户 Saved Tracks",
@@ -21050,12 +21261,12 @@
         "target": "/spotify/saved"
       },
       {
-        "title": "用户 Top Tracks",
+        "title": "节目",
         "docs": "https://docs.rsshub.app/multimedia.html#spotify",
         "source": [
-          "/"
+          "/show/:id"
         ],
-        "target": "/spotify/top/tracks"
+        "target": "/spotify/show/:id"
       },
       {
         "title": "用户 Top Artists",
@@ -21064,6 +21275,14 @@
           "/"
         ],
         "target": "/spotify/top/artists"
+      },
+      {
+        "title": "用户 Top Tracks",
+        "docs": "https://docs.rsshub.app/multimedia.html#spotify",
+        "source": [
+          "/"
+        ],
+        "target": "/spotify/top/tracks"
       }
     ]
   },
@@ -21313,6 +21532,19 @@
         "source": [
           "/realtime/*category"
         ]
+      }
+    ]
+  },
+  "stockedge.com": {
+    "_name": "Stock Edge",
+    ".": [
+      {
+        "title": "Daily Updates News",
+        "docs": "https://docs.rsshub.app/en/finance.html#stock-edge",
+        "source": [
+          "/daily-updates/news"
+        ],
+        "target": "/stockedge/daily-updates/news"
       }
     ]
   },
@@ -22075,6 +22307,19 @@
           "/:id",
           "/"
         ]
+      }
+    ]
+  },
+  "thehindu.com": {
+    "_name": "The Hindu",
+    ".": [
+      {
+        "title": "Topic",
+        "docs": "https://docs.rsshub.app/en/traditional-media.html#the-hindu",
+        "source": [
+          "/topic/:topic"
+        ],
+        "target": "/thehindu/topic/:topic"
       }
     ]
   },
@@ -24670,6 +24915,16 @@
       }
     ]
   },
+  "ximalaya.com": {
+    "_name": "喜马拉雅",
+    ".": [
+      {
+        "title": "专辑",
+        "docs": "https://docs.rsshub.app/multimedia.html#xi-ma-la-ya",
+        "source": "/:type/:id"
+      }
+    ]
+  },
   "xjtu.edu.cn": {
     "_name": "西安交通大学",
     "2yuan": [
@@ -24852,6 +25107,7 @@
         "title": "组合最新调仓信息",
         "docs": "https://docs.rsshub.app/finance.html#xue-qiu",
         "source": [
+          "/P/:id",
           "/p/:id"
         ],
         "target": "/xueqiu/snb/:id"
@@ -24860,7 +25116,8 @@
         "title": "股票信息",
         "docs": "https://docs.rsshub.app/finance.html#xue-qiu",
         "source": [
-          "/S/:id"
+          "/S/:id",
+          "/s/:id"
         ],
         "target": "/xueqiu/stock_info/:id"
       },
@@ -26108,16 +26365,6 @@
         "source": [
           "/"
         ]
-      }
-    ]
-  },
-  "ximalaya.com": {
-    "_name": "喜马拉雅",
-    ".": [
-      {
-        "title": "专辑",
-        "docs": "https://docs.rsshub.app/multimedia.html#xi-ma-la-ya",
-        "source": "/:type/:id"
       }
     ]
   },
