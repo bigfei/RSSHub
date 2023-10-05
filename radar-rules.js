@@ -100,7 +100,7 @@
     },
     'alter-shanghai.cn': { _name: 'Alter', '.': [{ title: '新闻', docs: 'https://docs.rsshub.app/routes/shopping#alter-zhong-guo', source: '/cn/news', target: '/alter-cn/news' }] },
     'itslide.com': { _name: 'ITSlide', www: [{ title: '最新', docs: 'https://docs.rsshub.app/routes/programming#itslide', source: '/*', target: '/itslide/new' }] },
-    'leboncoin.fr': { _name: 'leboncoin', www: [{ title: 'ads', docs: 'https://docs.rsshub.app/routes/en/shopping#leboncoin', source: '/recherche', target: (params, url) => '/leboncoin/ad/' + url.split('?')[1] }] },
+    'leboncoin.fr': { _name: 'leboncoin', www: [{ title: 'ads', docs: 'https://docs.rsshub.app/routes/shopping#leboncoin', source: '/recherche', target: (params, url) => '/leboncoin/ad/' + url.split('?')[1] }] },
     'yuancheng.work': {
         _name: '远程.work',
         '.': [
@@ -170,23 +170,6 @@
             { title: '教务处实践科学科通知', docs: 'https://docs.rsshub.app/routes/university#yun-nan-da-xue', source: '/*', target: '/jwc/4' },
         ],
         grs: [{ title: '研究生院通知', docs: 'https://docs.rsshub.app/routes/university#yun-nan-da-xue', source: '/*', target: '' }],
-    },
-    'japanpost.jp': {
-        _name: '日本郵便',
-        'trackings.post': [
-            {
-                title: '郵便・荷物の追跡',
-                docs: 'https://docs.rsshub.app/routes/other#ri-ben-you-bian-you-bian-zhui-ji-サービス',
-                source: '/services/srv/search/direct',
-                target: (params, url) => {
-                    const reqCode = new URL(url).searchParams.get('reqCodeNo1').toUpperCase();
-                    const locale = new URL(url).searchParams.get('locale').toLowerCase();
-                    if ((reqCode.search(/^(?:\d{11,12}|[A-Z]{2}\d{9}[A-Z]{2})$/) === 0 && locale === 'ja') || locale === 'en') {
-                        return `/japanpost/track/${reqCode}/${locale}`;
-                    }
-                },
-            },
-        ],
     },
     // 'biquge5200.com': { www: [{ title: 'biquge5200.com', docs: 'https://docs.rsshub.app/routes/reading#bi-qu-ge-biquge5200-com', source: '/:id', target: '/novel/biquge/:id' }] },
     // 'biquge.info': { www: [{ title: 'biquge.info', docs: 'https://docs.rsshub.app/routes/reading#bi-qu-ge-biquge-info', source: '/:id', target: '/novel/biqugeinfo/:id' }] },
@@ -312,13 +295,13 @@
     'umass.edu': {
         _name: 'UMASS Amherst',
         ece: [
-            { title: 'ECE News', docs: 'http://docs.rsshub.app/en/routes/university#umass-amherst', source: '/news', target: '/umass/amherst/ecenews' },
-            { title: 'ECE Seminar', docs: 'http://docs.rsshub.app/en/routes/university#umass-amherst', source: '/seminars', target: '/umass/amherst/eceseminar' },
+            { title: 'ECE News', docs: 'http://docs.rsshub.app/routes/university#umass-amherst', source: '/news', target: '/umass/amherst/ecenews' },
+            { title: 'ECE Seminar', docs: 'http://docs.rsshub.app/routes/university#umass-amherst', source: '/seminars', target: '/umass/amherst/eceseminar' },
         ],
-        'www.cics': [{ title: 'CICS News', docs: 'http://docs.rsshub.app/en/routes/university#umass-amherst', source: '/news', target: '/umass/amherst/csnews' }],
+        'www.cics': [{ title: 'CICS News', docs: 'http://docs.rsshub.app/routes/university#umass-amherst', source: '/news', target: '/umass/amherst/csnews' }],
         www: [
-            { title: 'IPO Events', docs: 'http://docs.rsshub.app/en/routes/university#umass-amherst', source: '/ipo/iss/events', target: '/umass/amherst/ipoevents' },
-            { title: 'IPO Featured Stories', docs: 'http://docs.rsshub.app/en/routes/university#umass-amherst', source: '/ipo/iss/featured-stories', target: '/umass/amherst/ipostories' },
+            { title: 'IPO Events', docs: 'http://docs.rsshub.app/routes/university#umass-amherst', source: '/ipo/iss/events', target: '/umass/amherst/ipoevents' },
+            { title: 'IPO Featured Stories', docs: 'http://docs.rsshub.app/routes/university#umass-amherst', source: '/ipo/iss/featured-stories', target: '/umass/amherst/ipostories' },
         ],
     },
     'bjeea.com': {
