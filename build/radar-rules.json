@@ -1513,6 +1513,19 @@
       }
     ]
   },
+  "binance.com": {
+    "_name": "Binance",
+    ".": [
+      {
+        "title": "Binance数字货币及交易对上新",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/:lang/support/announcement"
+        ],
+        "target": "/binance/launchpool"
+      }
+    ]
+  },
   "bing.com": {
     "_name": "Bing",
     "cn": [
@@ -8558,6 +8571,22 @@
   "minecraft.net": {
     "_name": "Minecraft",
     ".": [
+      {
+        "title": "Java Blocked Servers",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/minecraft/blockedservers"
+      },
+      {
+        "title": "Java Runtimes",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/"
+        ],
+        "target": "/minecraft/java-runtime/:arch?/:javaType?"
+      },
       {
         "title": "Java Game Update",
         "docs": "https://docs.rsshub.app/routes/game",
