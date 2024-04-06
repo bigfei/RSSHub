@@ -68,6 +68,19 @@
       }
     ]
   },
+  "12371.cn": {
+    "_name": "共产党员网",
+    "www": [
+      {
+        "title": "最新发布",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/12371/:category?"
+      }
+    ]
+  },
   "005.tv": {
     "_name": "幻之羁绊动漫网",
     ".": [
@@ -8996,6 +9009,20 @@
       }
     ]
   },
+  "ncpssd.cn": {
+    "_name": "国家哲学社会科学文献中心",
+    ".": [
+      {
+        "title": "最新文献",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/",
+          "/newlist"
+        ],
+        "target": "/ncpssd/newlist"
+      }
+    ]
+  },
   "ncu.edu.cn": {
     "_name": "南昌大学",
     "jwc": [
@@ -12475,6 +12502,27 @@
       }
     ]
   },
+  "shopify.com": {
+    "_name": "Shopify",
+    "apps": [
+      {
+        "title": "App reviews",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/:handle"
+        ],
+        "target": "/shopify/apps/:handle/reviews/:page?"
+      },
+      {
+        "title": "App store search",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/search"
+        ],
+        "target": "/shopify(_params,url)=>{const{searchParams}=new URL(url).searchParams;return searchParams.has(\"q\")?`/shopify/apps/search/${searchParams.get(\"q\")}`:null}"
+      }
+    ]
+  },
   "shoppingdesign.com.tw": {
     "_name": "Shopping Design",
     "www": [
@@ -14822,6 +14870,20 @@
       }
     ]
   },
+  "watasuke.net": {
+    "_name": "Watasuke",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog/",
+          "/"
+        ],
+        "target": "/watasuke/blog"
+      }
+    ]
+  },
   "web.dev": {
     "_name": "web.dev",
     ".": [
@@ -15657,7 +15719,7 @@
         "target": "/youtube/channel/:id"
       },
       {
-        "title": "Unknown",
+        "title": "Custom URL",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/c/:id"

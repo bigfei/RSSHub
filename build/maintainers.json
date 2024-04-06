@@ -64,6 +64,9 @@
   "/12306/zxdt/:id?": [
     "LogicJake"
   ],
+  "/12371/:category?": [
+    "zvrr"
+  ],
   "/005/:category?": [
     "nczitzk"
   ],
@@ -3687,6 +3690,9 @@
   "/ncepu/master/:type": [
     "nilleo"
   ],
+  "/ncpssd/newlist": [
+    "LyleLee"
+  ],
   "/ncu/jwc": [
     "ywh555hhh"
   ],
@@ -4893,6 +4899,12 @@
   "/shopback/:store": [
     "nczitzk"
   ],
+  "/shopify/apps/:handle/reviews/:page?": [
+    "PrintNow"
+  ],
+  "/shopify/apps/search/:q": [
+    "PrintNow"
+  ],
   "/shoppingdesign/posts": [
     "miles170"
   ],
@@ -5839,6 +5851,9 @@
   "/warthunder/news": [
     "axojhf"
   ],
+  "/watasuke/blog": [
+    "honahuku"
+  ],
   "/wdc/download/:id?": [],
   "/web/articles": [
     "KarasuShin"
@@ -6252,7 +6267,9 @@
   "/youtube/community/:handle": [
     "TonyRL"
   ],
-  "/youtube/c/:username/:embed?": [],
+  "/youtube/c/:username/:embed?": [
+    "TonyRL"
+  ],
   "/youtube/live/:username/:embed?": [
     "sussurr127"
   ],
