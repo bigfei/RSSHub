@@ -7790,7 +7790,7 @@
         "maintainers": [
           "bigfei"
         ],
-        "description": "\n    | Site ID   | Title      |\n    | /         | News       |\n    | bpol      | Politics   |\n    | bbiz      | Business   |\n    | markets   | Markets    |\n    | technology| Technology |\n    | green     | Green      |\n    | wealth    | Wealth     |\n    | pursuits  | Pursuits   |\n    | bview     | Opinion    |\n    | equality  | Equality   |\n    | businessweek | Businessweek |\n    | citylab   | CityLab    |\n    ",
+        "description": "\n    | Site ID      | Title        |\n    | ------------ | ------------ |\n    | /            | News         |\n    | bpol         | Politics     |\n    | bbiz         | Business     |\n    | markets      | Markets      |\n    | technology   | Technology   |\n    | green        | Green        |\n    | wealth       | Wealth       |\n    | pursuits     | Pursuits     |\n    | bview        | Opinion      |\n    | equality     | Equality     |\n    | businessweek | Businessweek |\n    | citylab      | CityLab      |\n    ",
         "location": "index.ts"
       }
     },
