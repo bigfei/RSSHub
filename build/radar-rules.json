@@ -1255,15 +1255,6 @@
     "_name": "北京智源人工智能研究院",
     "hub": [
       {
-        "title": "智源社区 - 评论",
-        "docs": "https://docs.rsshub.app/routes/programming",
-        "source": [
-          "/comments",
-          "/"
-        ],
-        "target": "/baai/hub/comments"
-      },
-      {
         "title": "智源社区 - 活动",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
@@ -1271,6 +1262,16 @@
           "/"
         ],
         "target": "/baai/hub/events"
+      }
+    ],
+    ".": [
+      {
+        "title": "智源社区",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/baai(_params,url)=>{const searchParams=new URL(url).searchParams;const tagId=searchParams.get(\"tag_id\");const sort=searchParams.get(\"sort\");const range=searchParams.get(\"time_range\");return`/baai/hub${tagId?`/${tagId}`:\"\"}${sort?`/${sort}`:\"\"}${range?`/${range}`:\"\"}`}"
       }
     ]
   },
@@ -1993,6 +1994,112 @@
         ],
         "target": "/bnu/lib/:category"
       }
+    ],
+    "mba": [
+      {
+        "title": "经济与工商管理学院MBA",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category"
+        ],
+        "target": "/bnuparams=>{const category=params.category;return category?`/${category.replace(/\\/index\\.html$/,\"\")}`:\"\"}"
+      },
+      {
+        "title": "新闻聚焦",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/xwdt/index.html"
+        ],
+        "target": "/bnu/mba/xwdt"
+      },
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/index.html"
+        ],
+        "target": "/bnu/mba/tzgg"
+      },
+      {
+        "title": "MBA系列讲座",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/mbaxljz/index.html"
+        ],
+        "target": "/bnu/mba/mbaxljz"
+      },
+      {
+        "title": "招生动态 - 下载专区",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zsdt/cjwt/index.html"
+        ],
+        "target": "/bnu/mba/zsdt/cjwt"
+      },
+      {
+        "title": "国际视野 - 海外基地",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gjhz/hwjd/index.html"
+        ],
+        "target": "/bnu/mba/gjhz/hwjd"
+      },
+      {
+        "title": "国际视野 - 学位合作",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gjhz/xwhz/index.html"
+        ],
+        "target": "/bnu/mba/gjhz/xwhz"
+      },
+      {
+        "title": "国际视野 - 长期交换",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gjhz/zqjh/index.html"
+        ],
+        "target": "/bnu/mba/gjhz/zqjh"
+      },
+      {
+        "title": "国际视野 - 短期项目",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gjhz/dqxm/index.html"
+        ],
+        "target": "/bnu/mba/gjhz/dqxm"
+      },
+      {
+        "title": "校园生活 - 学生组织",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/xysh/xszz/index.html"
+        ],
+        "target": "/bnu/mba/xysh/xszz"
+      },
+      {
+        "title": "职业发展 - 校外导师",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zyfz/xwds/index.html"
+        ],
+        "target": "/bnu/mba/zyfz/xwds"
+      },
+      {
+        "title": "职业发展 - 企业实践",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zyfz/zycp/index.html"
+        ],
+        "target": "/bnu/mba/zyfz/zycp"
+      },
+      {
+        "title": "职业发展 - 就业创业",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zyfz/jycy/index.html"
+        ],
+        "target": "/bnu/mba/zyfz/jycy"
+      }
     ]
   },
   "boc.cn": {
@@ -2098,6 +2205,19 @@
           "/"
         ],
         "target": "/bupt/rczp"
+      }
+    ]
+  },
+  "byau.edu.cn": {
+    "_name": "黑龙江八一农垦大学",
+    "xinwen": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:type_id/list.htm"
+        ],
+        "target": "/byau/news/:type_id"
       }
     ]
   },
@@ -3104,6 +3224,19 @@
       }
     ]
   },
+  "colamanga.com": {
+    "_name": "COLAMANGA",
+    "www": [
+      {
+        "title": "Manga",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:id/"
+        ],
+        "target": "/colamanga/:id"
+      }
+    ]
+  },
   "comicskingdom.com": {
     "_name": "Comics Kingdom",
     ".": [
@@ -3164,6 +3297,195 @@
           "/"
         ],
         "target": "/coomer/posts"
+      }
+    ]
+  },
+  "cpcaauto.com": {
+    "_name": "cpcaauto.com",
+    ".": [
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php"
+        ],
+        "target": "/cpcaauto(_,url)=>{url=new URL(url);const types=url.searchParams.get(\"types\");const id=url.searchParams.get(\"id\");return types?`/${types}${id?`/${id}`:\"\"}`:\"\"}"
+      },
+      {
+        "title": "行业新闻 - 国内乘用车",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=news&anid=10"
+        ],
+        "target": "/cpcaauto/news/news/10"
+      },
+      {
+        "title": "行业新闻 - 进口及国外乘用车",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=news&anid=64"
+        ],
+        "target": "/cpcaauto/news/news/64"
+      },
+      {
+        "title": "行业新闻 - 后市场",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=news&anid=44"
+        ],
+        "target": "/cpcaauto/news/news/44"
+      },
+      {
+        "title": "行业新闻 - 商用车",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=news&anid=62"
+        ],
+        "target": "/cpcaauto/news/news/62"
+      },
+      {
+        "title": "车市解读 - 周度",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=csjd&anid=128"
+        ],
+        "target": "/cpcaauto/news/csjd/128"
+      },
+      {
+        "title": "车市解读 - 月度",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=csjd&anid=129"
+        ],
+        "target": "/cpcaauto/news/csjd/129"
+      },
+      {
+        "title": "车市解读 - 指数",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=csjd&anid=130"
+        ],
+        "target": "/cpcaauto/news/csjd/130"
+      },
+      {
+        "title": "车市解读 - 预测",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=csjd&anid=131"
+        ],
+        "target": "/cpcaauto/news/csjd/131"
+      },
+      {
+        "title": "发布会报告 - 上海市场上牌数",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=119"
+        ],
+        "target": "/cpcaauto/news/bgzl/119"
+      },
+      {
+        "title": "发布会报告 - 京城车市",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=122"
+        ],
+        "target": "/cpcaauto/news/bgzl/122"
+      },
+      {
+        "title": "发布会报告 - 进口车市场分析",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=120"
+        ],
+        "target": "/cpcaauto/news/bgzl/120"
+      },
+      {
+        "title": "发布会报告 - 二手车市场分析",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=121"
+        ],
+        "target": "/cpcaauto/news/bgzl/121"
+      },
+      {
+        "title": "发布会报告 - 价格指数",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=124"
+        ],
+        "target": "/cpcaauto/news/bgzl/124"
+      },
+      {
+        "title": "发布会报告 - 热点评述",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=125"
+        ],
+        "target": "/cpcaauto/news/bgzl/125"
+      },
+      {
+        "title": "发布会报告 - 新能源月报",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=126"
+        ],
+        "target": "/cpcaauto/news/bgzl/126"
+      },
+      {
+        "title": "发布会报告 - 商用车月报",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=127"
+        ],
+        "target": "/cpcaauto/news/bgzl/127"
+      },
+      {
+        "title": "发布会报告 - 政策分析",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=bgzl&anid=123"
+        ],
+        "target": "/cpcaauto/news/bgzl/123"
+      },
+      {
+        "title": "经济与政策 - 一周经济",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=meeting&anid=46"
+        ],
+        "target": "/cpcaauto/news/meeting/46"
+      },
+      {
+        "title": "经济与政策 - 一周政策",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=meeting&anid=47"
+        ],
+        "target": "/cpcaauto/news/meeting/47"
+      },
+      {
+        "title": "乘联会论坛 - 论坛文章",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=yjsy&anid=49"
+        ],
+        "target": "/cpcaauto/news/yjsy/49"
+      },
+      {
+        "title": "乘联会论坛 - 两会",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=yjsy&anid=111"
+        ],
+        "target": "/cpcaauto/news/yjsy/111"
+      },
+      {
+        "title": "乘联会论坛 - 车展看点",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/news.php?types=yjsy&anid=113"
+        ],
+        "target": "/cpcaauto/news/yjsy/113"
       }
     ]
   },
@@ -3415,7 +3737,7 @@
         "target": "/daily/discussed"
       },
       {
-        "title": "Unknown",
+        "title": "Popular",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/popular"
@@ -3429,6 +3751,15 @@
           "/popular"
         ],
         "target": "/daily/upvoted"
+      },
+      {
+        "title": "User Posts",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:userId/posts",
+          "/:userId"
+        ],
+        "target": "/daily/user/:userId"
       }
     ]
   },
@@ -4186,6 +4517,17 @@
           "/"
         ],
         "target": "/ecnu/acm/contest/"
+      }
+    ],
+    "www.jwc": [
+      {
+        "title": "教务处通知",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/",
+          "/"
+        ],
+        "target": "/ecnu/tzgg"
       }
     ]
   },
@@ -5473,6 +5815,147 @@
       }
     ]
   },
+  "ah.gov.cn": {
+    "_name": "中国人民银行",
+    "kjt": [
+      {
+        "title": "安徽省科学技术厅",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/:category"
+        ],
+        "target": "/govparams=>{const category=params.category;return`/gov/ah/kjt${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "科技资讯 - 通知公告",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzx/tzgg/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzx/tzgg"
+      },
+      {
+        "title": "科技资讯 - 工作动态",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzx/gzdt/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzx/gzdt"
+      },
+      {
+        "title": "科技资讯 - 基层科技",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzx/jckj/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzx/jckj"
+      },
+      {
+        "title": "科技资讯 - 媒体聚焦",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzx/mtjj/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzx/mtjj"
+      },
+      {
+        "title": "科技资讯 - 重要转载",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzx/zyzz/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzx/zyzz"
+      },
+      {
+        "title": "科技资讯 - 图片视频",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzx/tpsp/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzx/tpsp"
+      },
+      {
+        "title": "科技统计 - 技术市场交易",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjtj/jsscjy/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjtj/jsscjy"
+      },
+      {
+        "title": "科技统计 - 科技成果公报",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjtj/kjcggb/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjtj/kjcggb"
+      },
+      {
+        "title": "科技统计 - 孵化载体发展",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjtj/cyfhfz/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjtj/cyfhfz"
+      },
+      {
+        "title": "科技数据 - 创新企业",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjsj/cxqy/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjsj/cxqy"
+      },
+      {
+        "title": "科技数据 - 创新项目",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjsj/cxxm/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjsj/cxxm"
+      },
+      {
+        "title": "科技数据 - 创新成果",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjsj/cxcg/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjsj/cxcg"
+      },
+      {
+        "title": "科技数据 - 转化基金入库项目",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjsj/zhjjrkxm/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjsj/zhjjrkxm"
+      },
+      {
+        "title": "科技数据 - 创新平台",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjsj/cxpt/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjsj/cxpt"
+      },
+      {
+        "title": "科技数据 - 创新园区",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjsj/cxyq/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjsj/cxyq"
+      },
+      {
+        "title": "科技数据 - 创新许可",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/kjzy/kjsj/cxxk/index.html"
+        ],
+        "target": "/gov/ah/kjt/kjzy/kjsj/cxxk"
+      }
+    ]
+  },
   "bjedu.gov.cn": {
     "_name": "中国人民银行",
     "gh": [
@@ -5982,6 +6465,19 @@
           "/"
         ],
         "target": "/gov/zhengce/wenjian"
+      }
+    ]
+  },
+  "zj.gov.cn": {
+    "_name": "中国人民银行",
+    "search": [
+      {
+        "title": "浙江省人民政府-全省政府网站统一搜索",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/jsearchfront/search.do"
+        ],
+        "target": "/gov/zj/search/:websiteid?/:word/:cateid?"
       }
     ]
   },
@@ -7286,6 +7782,35 @@
       }
     ]
   },
+  "iehou.com": {
+    "_name": "网猴线报",
+    ".": [
+      {
+        "title": "最新线报",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/iehou/"
+      },
+      {
+        "title": "24小时热门",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/page-dayhot.htm"
+        ],
+        "target": "/iehou/dayhot"
+      },
+      {
+        "title": "一周热门",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/page-weekhot.htm"
+        ],
+        "target": "/iehou/weekhot"
+      }
+    ]
+  },
   "neea.cn": {
     "_name": "IELTS 雅思",
     "ielts": [
@@ -8084,6 +8609,27 @@
       }
     ]
   },
+  "kpmg.com": {
+    "_name": "KPMG",
+    ".": [
+      {
+        "title": "Insights",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/xx/en/home/insights.html"
+        ],
+        "target": "/kpmg/insights/en"
+      },
+      {
+        "title": "Insights",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/cn/zh/home/insights.html"
+        ],
+        "target": "/kpmg/insights/zh"
+      }
+    ]
+  },
   "kuaidi100.com": {
     "_name": "快递 100",
     ".": [
@@ -8331,6 +8877,20 @@
           "/fine/:tagId"
         ],
         "target": "/lfsyd/tag/:tagId"
+      }
+    ]
+  },
+  "lianxh.cn": {
+    "_name": "连享会",
+    "www": [
+      {
+        "title": "精彩资讯",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blogs/all.html",
+          "/"
+        ],
+        "target": "/lianxh/:category?"
       }
     ]
   },
@@ -10201,6 +10761,40 @@
           "/"
         ],
         "target": "/odaily/user/:id"
+      }
+    ]
+  },
+  "olevod.one": {
+    "_name": "欧乐影院",
+    "www": [
+      {
+        "title": "视频",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/vod/:id"
+        ],
+        "target": "/olevod/vod/:id"
+      },
+      {
+        "title": "最新视频",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/"
+        ],
+        "target": "/olevod/vodlist"
+      }
+    ]
+  },
+  "ollama.com": {
+    "_name": "Ollama",
+    ".": [
+      {
+        "title": "Models",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/library"
+        ],
+        "target": "/ollama/library"
       }
     ]
   },
@@ -13104,6 +13698,19 @@
       }
     ]
   },
+  "sohu.com": {
+    "_name": "搜狐号",
+    "mp": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/profile"
+        ],
+        "target": "/sohu(_params,url)=>`/sohu/mp/${new URL(url).searchParams.get(\"xpt\")}`"
+      }
+    ]
+  },
   "sony.com": {
     "_name": "Sony",
     ".": [
@@ -13394,10 +14001,11 @@
     "_name": "四川工商学院",
     "jsjxy": [
       {
-        "title": "计算机学院通知公告",
+        "title": "计算机学院 - 通知公告",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/news",
+          "/",
           "/"
         ],
         "target": "/stbu/jsjxy"
@@ -13405,7 +14013,7 @@
     ],
     ".": [
       {
-        "title": "Unknown",
+        "title": "学院新闻",
         "docs": "https://docs.rsshub.app/routes/university",
         "source": [
           "/html/news/xueyuan",
@@ -13415,9 +14023,30 @@
       }
     ]
   },
+  "steamcommunity.com": {
+    "_name": "Steam",
+    ".": [
+      {
+        "title": "Community Hub",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/app/:appid"
+        ],
+        "target": "/steam/appcommunityfeed/:appid"
+      }
+    ]
+  },
   "steampowered.com": {
     "_name": "Steam",
     "store": [
+      {
+        "title": "Community Hub",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/app/:appid/*/"
+        ],
+        "target": "/steam/appcommunityfeed/:appid"
+      },
       {
         "title": "Store Search",
         "docs": "https://docs.rsshub.app/routes/game",
@@ -14479,10 +15108,10 @@
     ]
   },
   "u9a9.com": {
-    "_name": "Unknown",
+    "_name": "U9A9",
     ".": [
       {
-        "title": "Unknown",
+        "title": "Search",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/"
@@ -14490,7 +15119,7 @@
         "target": "/u9a9/:preview?"
       },
       {
-        "title": "Unknown",
+        "title": "Search",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/"
@@ -16522,6 +17151,27 @@
           "/"
         ],
         "target": "/zrblog/"
+      }
+    ]
+  },
+  "zsxq.com": {
+    "_name": "知识星球",
+    "wx": [
+      {
+        "title": "星球",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/dweb2/index/group/:id"
+        ],
+        "target": "/zsxq/group/:id/:scope?"
+      },
+      {
+        "title": "用户足迹",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/dweb2/index/footprint/:id"
+        ],
+        "target": "/zsxq/user/:id"
       }
     ]
   },
